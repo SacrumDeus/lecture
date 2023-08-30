@@ -1,6 +1,6 @@
 # Einführung in ABAP
 
-![Einführung in ABAP](./../src/abap-control-introduction.png)
+![Einführung in ABAP](../src/abap-introduction.png)
 
 ## Was ist SAP ABAP?
 
