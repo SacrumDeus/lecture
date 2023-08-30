@@ -72,23 +72,23 @@ Weiterhin lassen sich Datentypen auch nach Art der Daten kategorisieren:
 
 Folgende Typen lassen sich definieren:
 
-|     Typ      | Kategorie            | Länge                 | Standard  | Bezeichnung                            | Wertbereich                                                                                                                                                                                                          |        Initialwert        |
-| :----------: | -------------------- | --------------------- | --------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----------------------: |
-|     `b`      | Numerischer Datentyp | 1 Byte                |           | 1-Byte Integer (intern)                | min: 0 <br/> max: +255                                                                                                                                                                                        |             0             |
-|     `s`      | Numerischer Datentyp | 2 Byte                |           | 2-Byte Integer (intern)                | min: -32.768 <br/> max: +32.767                                                                                                                                                                               |             0             |
-|     `i`      | Numerischer Datentyp | 4 Byte                |           | 4-Byte Integer                         | min: -2.147.483.648 <br/> max: +2.147.483.647                                                                                                                                                                 |             0             |
-|    `int8`    | Numerischer Datentyp | 8 Byte                |           | 8-Byte Integer                         | min: -9.223.372.036.854.775.808 <br/> max: +9.223.372.036.854.775.807                                                                                                                                         |             0             |
-|     `p`      | Numerischer Datentyp | 1 bis 16 Byte         | 8 Byte    | gepackte Zahl                          | [SAP ABAP - Numerische Datentypen](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/de-de/abenbuiltin_types_numeric.htm)                                                                                         |             0             |
-| `decfloat16` | Numerischer Datentyp | 8 Byte                |           | dezimale Gleitpunktzahl mit 16 Stellen | negativer Bereich: 10^385 bis -10^-383  <br/>0 <br/> positiver Bereich: 10^-383 bis 10^385 <br/>\* siehe Hinweis zu Subnormalen Zahlen                                                                                |             0             |
-| `decfloat34` | Numerischer Datentyp | 16 Byte               |           | dezimale Gleitpunktzahl mit 34 Stellen | negativer Bereich: 10^6145 bis -10^-6143  <br/>0 <br/> positiver Bereich: 10^-6143 bis 10^6145 <br/>\* siehe Hinweis zu Subnormalen Zahlen                                                                            |             0             |
-|     `f`      | Numerischer Datentyp | 8 Byte                |           | binäre Gleitpunktzahl mit 17 Stellen   | negativer Bereich: -1,7976931348623157x10^308 bis -2,2250738585072014x10^-308 <br/>0 <br/> positiver Bereich: +2,2250738585072014x10^-308 bis +1,7976931348623157x10^308 <br/>\* siehe Hinweis zu Subnormalen Zahlen |             0             |
-|     `c`      | Zeichenartige Typen  | 1 bis 262.143 Zeichen | 1 Zeichen | Textfeld                               | Beliebige alphanumerische Zeichen                                                                                                                                                                                    |    "` `" für jede Stelle     |
-|     `n`      | Zeichenartige Typen  | 1 bis 262.143 Zeichen | 1 Zeichen | numerisches Textfeld                   | Beliebige alphanumerische Zeichen, es aber aber die Ziffern 0-9 zulässig                                                                                                                                             |   "`0`" für jede Stelle   |
-|   `string`   | Zeichenartige Typen  | variabel              |           | Textstring                             | Beliebige alphanumerische Zeichen                                                                                                                                                                                    | Leerer String der Länge 0 |
-|     `x`      | Byteartige Typen     | 1 bis 524.287 Byte    | 1 Byte    | Bytefeld                               | Beliebige Bytewerte, `0x00` bis `0xFF`                                                                                                                                                                               |          `0x00`           |
-|  `xstring`   | Byteartige Typen     | variabel              |           | Bytestring                             | Beliebige Bytewerte, `0x00` bis `0xFF`                                                                                                                                                                               | Leerer String der Länge 0 |
-| `d` | Datums- und Zeittypen | 8 Zeichen | | Datumsfeld | 8 beliebige alphanumerische Zeichen, gültige Werte sind aber nur Ziffern, welche im Datumsformat `YYYYMMDD` vorliegen. Es gilt `YYYY` (Jahr) muss zwischen `0001` und `9999` sein, `MM` (Monat) muss zwischen `01` und `12` sein, `DD` (Tag) muss zwischen `01` und `31` sein | `00000000` |
-| `t` | Datums- und Zeittypen | 6 Zeichen | | Zeitfeld   | 6 beliebige alphanumerische Zeichen, gültige Werte sind aber nur Ziffern, welche im Zeitformat `HHMMSS` vorliegen. Es gilt `HH` (Stunde) muss zwischen `00` und `23` sein, `MM` (Minuten) und `SS` (Sekunden) müssen zwischen `00` und `59` sein | `000000` |
+|     Typ      | Kategorie             | Länge                 | Standard  | Bezeichnung                            | Wertbereich                                                                                                                                                                                                                                                                   |        Initialwert        |
+| :----------: | --------------------- | --------------------- | --------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----------------------: |
+|     `b`      | Numerischer Datentyp  | 1 Byte                |           | 1-Byte Integer (intern)                | min: 0 <br/> max: +255                                                                                                                                                                                                                                                        |             0             |
+|     `s`      | Numerischer Datentyp  | 2 Byte                |           | 2-Byte Integer (intern)                | min: -32.768 <br/> max: +32.767                                                                                                                                                                                                                                               |             0             |
+|     `i`      | Numerischer Datentyp  | 4 Byte                |           | 4-Byte Integer                         | min: -2.147.483.648 <br/> max: +2.147.483.647                                                                                                                                                                                                                                 |             0             |
+|    `int8`    | Numerischer Datentyp  | 8 Byte                |           | 8-Byte Integer                         | min: -9.223.372.036.854.775.808 <br/> max: +9.223.372.036.854.775.807                                                                                                                                                                                                         |             0             |
+|     `p`      | Numerischer Datentyp  | 1 bis 16 Byte         | 8 Byte    | gepackte Zahl                          | [SAP ABAP - Numerische Datentypen](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/de-de/abenbuiltin_types_numeric.htm)                                                                                                                                                  |             0             |
+| `decfloat16` | Numerischer Datentyp  | 8 Byte                |           | dezimale Gleitpunktzahl mit 16 Stellen | negativer Bereich: 10^385 bis -10^-383  <br/>0 <br/> positiver Bereich: 10^-383 bis 10^385 <br/>\* siehe Hinweis zu Subnormalen Zahlen                                                                                                                                        |             0             |
+| `decfloat34` | Numerischer Datentyp  | 16 Byte               |           | dezimale Gleitpunktzahl mit 34 Stellen | negativer Bereich: 10^6145 bis -10^-6143  <br/>0 <br/> positiver Bereich: 10^-6143 bis 10^6145 <br/>\* siehe Hinweis zu Subnormalen Zahlen                                                                                                                                    |             0             |
+|     `f`      | Numerischer Datentyp  | 8 Byte                |           | binäre Gleitpunktzahl mit 17 Stellen   | negativer Bereich: -1,7976931348623157x10^308 bis -2,2250738585072014x10^-308 <br/>0 <br/> positiver Bereich: +2,2250738585072014x10^-308 bis +1,7976931348623157x10^308 <br/>\* siehe Hinweis zu Subnormalen Zahlen                                                          |             0             |
+|     `c`      | Zeichenartige Typen   | 1 bis 262.143 Zeichen | 1 Zeichen | Textfeld                               | Beliebige alphanumerische Zeichen                                                                                                                                                                                                                                             |   "` `" für jede Stelle   |
+|     `n`      | Zeichenartige Typen   | 1 bis 262.143 Zeichen | 1 Zeichen | numerisches Textfeld                   | Beliebige alphanumerische Zeichen, es aber aber die Ziffern 0-9 zulässig                                                                                                                                                                                                      |   "`0`" für jede Stelle   |
+|   `string`   | Zeichenartige Typen   | variabel              |           | Textstring                             | Beliebige alphanumerische Zeichen                                                                                                                                                                                                                                             | Leerer String der Länge 0 |
+|     `x`      | Byteartige Typen      | 1 bis 524.287 Byte    | 1 Byte    | Bytefeld                               | Beliebige Bytewerte, `0x00` bis `0xFF`                                                                                                                                                                                                                                        |          `0x00`           |
+|  `xstring`   | Byteartige Typen      | variabel              |           | Bytestring                             | Beliebige Bytewerte, `0x00` bis `0xFF`                                                                                                                                                                                                                                        | Leerer String der Länge 0 |
+|     `d`      | Datums- und Zeittypen | 8 Zeichen             |           | Datumsfeld                             | 8 beliebige alphanumerische Zeichen, gültige Werte sind aber nur Ziffern, welche im Datumsformat `YYYYMMDD` vorliegen. Es gilt `YYYY` (Jahr) muss zwischen `0001` und `9999` sein, `MM` (Monat) muss zwischen `01` und `12` sein, `DD` (Tag) muss zwischen `01` und `31` sein |        `00000000`         |
+|     `t`      | Datums- und Zeittypen | 6 Zeichen             |           | Zeitfeld                               | 6 beliebige alphanumerische Zeichen, gültige Werte sind aber nur Ziffern, welche im Zeitformat `HHMMSS` vorliegen. Es gilt `HH` (Stunde) muss zwischen `00` und `23` sein, `MM` (Minuten) und `SS` (Sekunden) müssen zwischen `00` und `59` sein                              |         `000000`          |
 
 > **Hinweis zu Subnormalen Zahlen**
 >
@@ -128,6 +128,25 @@ Es können unterschieden komplexe Datentypen unterschieden werden:
 
 Ein strukturiertert Datentyp ist eine Folge verschiedener [ elemtarer / Referenz- / komplexer ] Datentypen. Sie dient der Zusammenfassung von logisch zusammenhängender Arbeitsbereichen.
 
+```abap
+" Erstellen eines Types
+TYPES: BEGIN OF ty_s_beispiel_struktur,
+         vorname    TYPE c LENGTH 40,
+         nachname   TYPE c LENGTH 40,
+         geburtstag TYPE d,
+         abteilung  TYPE c LENGTH 40,
+       END OF ty_s_beispiel_struktur.
+
+" Erstellen einer Variablen
+DATA: beispiel TYPE ty_s_beispiel_struktur.
+
+" Füllen einer Struktur
+beispiel-vorname    = 'Max'.
+beispiel-nachname   = 'Mustermann'.
+beispiel-geburtstag = '20013006'.  " System-Schreibweise für 30.06.2001
+beispiel-abteilung  = 'IT'.
+```
+
 ### Tabellentypen
 
 Ein Tabellentyp ist eine Folge von beliebig vielen Zeilen des gleichen Datentyps. Tabellentypen werden durch Zeilentypen, Tabellenart und Tabellenschlüssel charakterisiert.
@@ -136,6 +155,36 @@ Ein Tabellentyp ist eine Folge von beliebig vielen Zeilen des gleichen Datentyps
 * Tabellenart definiert die Art des Zugriffs auf die Tabelle
 * Tabellenschlüssel dienen der eindeutigen Identifikation von Tabellenzeilen
 
+```abap
+" Erstellen eines Types - Struktur
+TYPES: BEGIN OF ty_s_beispiel_struktur,
+         vorname    TYPE c LENGTH 40,
+         nachname   TYPE c LENGTH 40,
+         geburtstag TYPE d,
+         abteilung  TYPE c LENGTH 40,
+       END OF ty_s_beispiel_struktur.
+
+" Erstellen eines Types - Tabelle
+TYPES: ty_t_beispiel_tabelle TYPE STANDARD TABLE OF ty_s_beispiel_struktur.
+
+" Erstellen einer Variable
+DATA: beipiel TYPE ty_t_beispiel_tabelle.
+
+" Füllen einer Tabelle
+beispiel = VALUE #( ( vorname = 'Max'   nachname = 'Mustermann' geburtstag = '19900101' abteilung = 'Vertrieb' )
+                    ( vorname = 'Anna'  nachname = 'Schmidt'    geburtstag = '19850515' abteilung = 'Marketing' )
+                    ( vorname = 'Peter' nachname = 'Meier'      geburtstag = '19751130' abteilung = 'IT' )
+                    ( vorname = 'Sarah' nachname = 'Müller'     geburtstag = '19950822' abteilung = 'Personalwesen' ) ).
+```
+
+
 ### Mesh-Typen
 
 Mesh-Typen sind eine spezielle Form der strukturierten Typen mit tabellarischen Komponenten, zwischen denen Assoziationen (Beziehungen) bestehen.
+
+Dieser Datentyp ist nur der Vollständigkeit halber aufgeführt. Aktuell gibt es keine sinnvollen Anwendungsfälle.
+
+Weitere Informationen und Anwendungsfälle gibt es hier:
+
+* [SAP Help: Meshes (DE)](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/de-de/abaptypes_mesh.htm)
+* [SAP Blogs: ABAP Meshes - when and how to use it (EN)](https://blogs.sap.com/2022/09/02/abap-meshes-when-and-how-to-use-them/)
