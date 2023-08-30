@@ -9,7 +9,7 @@
 > Dieses Verzeichnis führt in die Programmiersprache *ABAP Objects* ein. 
 > Die Navigation in ABAP ist nicht Teil dieser Einführung.
 
-![ABAP Overview](/src/abap-overview.png)
+![ABAP Overview](../src/abap-overview.png)
 
 ## Einführung in ABAP
 
