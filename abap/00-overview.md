@@ -32,6 +32,12 @@ Um Aufgaben in einem Programm zu lösen, werden die Aufgaben in viele kleine Auf
 
 ## Modulalisierung und Funktionen
 
+Während ein Programm geschrieben wird, fällt es häufig auf, dass eine bestimmte Anweisung (oder eine Kette von Anweisungen) wiederholt auf verschiedene Daten oder zu verschiedenen Zeitpunkten angewendet werden muss.
+
+Zusätzlich versuchen wir, verschiedene Anweisungen thematisch zusammenzufassen um die Lesbarkeit und Verständlichbarkeit des Codes zu erhöhen.
+
+Diese Vorgehensweise wird Modularisierung genannt.
+
 ## Objektorientierung in ABAP
 
 ## Datenbanken in ABAP
